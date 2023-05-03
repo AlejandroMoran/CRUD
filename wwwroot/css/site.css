@@ -32,6 +32,14 @@ h1{
   font-size: 190px;
 }
 
+form label{
+  color: grey;
+}
+
+p{
+  color:lightgray;
+}
+
 @keyframes textclip {
   to{
     background-position: -200%;

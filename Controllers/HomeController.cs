@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using CRUD.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CRUD.Controllers;
 
@@ -11,6 +12,26 @@ public class HomeController : Controller
     public HomeController(ILogger<HomeController> logger)
     {
         _logger = logger;
+    }
+    
+    [Authorize]
+    public IActionResult Create(){
+        return View();
+    }
+    
+    [Authorize]
+    public IActionResult Read(){
+        return View();
+    }
+    
+    [Authorize]
+    public IActionResult Update(){
+        return View();
+    }
+    
+    [Authorize]
+    public IActionResult Delete(){
+        return View();
     }
 
     public IActionResult Index()

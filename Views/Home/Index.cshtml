@@ -5,8 +5,10 @@
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <h2 class="display-6">What operation would you want to perform?</h2>
-    <button class="glow-on-hover" type="button">Create data</button>
-    <button class="glow-on-hover" type="button">Read data</button>
-    <button class="glow-on-hover" type="button">Update data</button>
-    <button class="glow-on-hover" type="button">Delete data</button>
+    <form method="post">
+        <button asp-controller="Home" asp-action="Create" id="Create" class="glow-on-hover">Create data</button>
+        <button asp-controller="Home" asp-action="Create" id="Read" class="glow-on-hover" >Read data</button>
+        <button asp-controller="Home" asp-action="Create" id="Update" class="glow-on-hover">Update data</button>
+        <button asp-controller="Home" asp-action="Create" id="Delete" class="glow-on-hover">Delete data</button>
+    </form>
 </div>
